@@ -11,7 +11,7 @@ var passwordText = document.querySelector("#password");
 // Prompts that come up after you click generate password
 function generatePassword() {
 var passwordLength = window.prompt("please enter a number between 8 and 128 to determine the length of password ");
-      if (passwordLength >=  129 || passwordLength <= 7|| passwordLength == "" ) {
+      if (passwordLength >=  129 || passwordLength <= 7|| isNaN(passwordLength) ) {
         return generatePassword();
         //= window.prompt("please enter a number between 8 and 128 to determine the length of password ");
       }
