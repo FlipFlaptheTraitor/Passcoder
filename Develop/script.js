@@ -5,9 +5,10 @@ generateButton.addEventListener('click', writePassword)
 //var pswdPeram = pswdLength ;
 function writePassword() {
   var password = generatePassword();
+  
 var passwordText = document.querySelector("#password");
  passwordText.value = password;
-}
+
 // Prompts that come up after you click generate password
 function generatePassword() {
 var passwordLength = window.prompt("please enter a number between 8 and 128 to determine the length of password ");
@@ -19,6 +20,10 @@ var passwordLength = window.prompt("please enter a number between 8 and 128 to d
   var lowerCases = confirm("Do you want lowercases in your password?");
   var upperCases = confirm("Do you want uppercases in your password?");
   var special = confirm("Do you want special characters in your password?");
+  if ( numbers==false && lowerCases==false && upperCases==false && special==false ) {
+    alert("please select at least one case type");
+    return generatePassword();
+  }
   // this is a minimum count for numbers, lowerCases, upperCases & specialCharacters
   var minimumCount = 0;
   // Empty minimums for numbers, lowerCases, upperCases & specialCharacters
@@ -71,4 +76,5 @@ var passwordLength = window.prompt("please enter a number between 8 and 128 to d
   randomPasswordGenerated += minimumUpperCases;
   randomPasswordGenerated += minimumSpecialCharacters;
   return randomPasswordGenerated;
+}
 }
