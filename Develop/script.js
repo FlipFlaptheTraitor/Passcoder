@@ -1,5 +1,8 @@
-const specialCharacters = "&'()*+,-./:;<=>?@][\^_`{|}~";
-const generateButton = document.getElementById('generate')
+let specialCharacters = "&'()*+,-./:;<=>?@][\^_`{|}~";
+let character = "abcdefghijklmnopqrstuvwxyz";
+let upperCharacter = character.upperCases;
+let numberCount = "1234567890"
+let generateButton = document.getElementById('generate')
 generateButton.addEventListener('click', writePassword)
 // Write password to the #password input
 //var pswdPeram = pswdLength ;
@@ -13,13 +16,14 @@ var passwordText = document.querySelector("#password");
 function generatePassword() {
 var passwordLength = window.prompt("please enter a number between 8 and 128 to determine the length of password ");
       if (passwordLength >=  129 || passwordLength <= 7|| isNaN(passwordLength) ) {
+        alert("please select a number between 8-128");
         return generatePassword();
         //= window.prompt("please enter a number between 8 and 128 to determine the length of password ");
-      }
-  var numbers = confirm("Do you want numbers in your password?");
-  var lowerCases = confirm("Do you want lowercases in your password?");
-  var upperCases = confirm("Do you want uppercases in your password?");
-  var special = confirm("Do you want special characters in your password?");
+      } 
+  var numbers = confirm("Would you like numbers in your password?");
+  var lowerCases = confirm("Would you like lowercases in your password?");
+  var upperCases = confirm("Would you like uppercases in your password?");
+  var special = confirm("Would you like special characters in your password?");
   if ( numbers==false && lowerCases==false && upperCases==false && special==false ) {
     alert("please select at least one case type");
     return generatePassword();
