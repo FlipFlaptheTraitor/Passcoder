@@ -22,6 +22,7 @@ var passwordLength = window.prompt("please enter a number between 8 and 128 to d
         return generatePassword();
         //= window.prompt("please enter a number between 8 and 128 to determine the length of password ");
       } 
+      //varibles for users choice of optional choices for password generator
   var numbers = confirm("Would you like numbers in your password?");
   var lowerCases = confirm("Would you like lowercases in your password?");
   var upperCases = confirm("Would you like uppercases in your password?");
@@ -83,4 +84,4 @@ var passwordLength = window.prompt("please enter a number between 8 and 128 to d
   randomPasswordGenerated += minSpecialCharacters;
   return randomPasswordGenerated;
 }
-}
+};

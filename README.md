@@ -5,12 +5,12 @@ Active link for the site can be found here https://flipflapthetraitor.github.io/
 ## Prerequisites 
 This site requires nothing but a web browser to run and any text editor to edit the application.
 ## Installation
-
+  Origin Repo can be found here https://github.com/FlipFlaptheTraitor/Passcoder
 ## Usage
-
+This program was designed to generate a
   
 ## Credit
-Origin Repo can be found here https://github.com/FlipFlaptheTraitor/Passcoder
+Created with the help of 
 Site and Files edited by Kevin Miller (FlipFlaptheTraitor) using Git and VScode
 ## Licence
 MIT License
