@@ -7,7 +7,7 @@ Active link for the site can be found here https://flipflapthetraitor.github.io/
 This site requires nothing but a web browser to run and any text editor to edit the application.
 
 ##Installation
-Origin Repo can be found here https://github.com/FlipFlaptheTraitor/Passcoder
+Origin Repo can be found here https://github.com/FlipFlaptheTraitor/Passcoder/tree/alt
 this is under the alt branch.
 
 ##Usage
