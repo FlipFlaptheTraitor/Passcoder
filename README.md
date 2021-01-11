@@ -2,7 +2,7 @@
 
 ##Active link
 Active link for the site can be found here https://flipflapthetraitor.github.io/Passcoder/
-
+![passcode](./develop/passwordgenerator.png?raw=true "password generator")
 ##Prerequisites
 This site requires nothing but a web browser to run and any text editor to edit the application.
 
